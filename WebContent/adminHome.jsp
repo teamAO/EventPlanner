@@ -9,9 +9,15 @@
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <title>Event Planner Admin Home</title>
+<<<<<<< HEAD
 <link href="https://www.aoins.com/aoenv/public/corp/css/2.0.1/agencyStyle.css" rel="stylesheet" type="text/css">
 <link href="https://www.aoins.com/aoenv/public/corp/css/2.0.1/leftColumn.css" rel="stylesheet" type="text/css"><link href="rightColumn.css" rel="stylesheet" type="text/css">
 <link href="https://www.aoins.com/aoenv/public/corp/css/2.0.1/rightCoumn.css" rel="stylesheet" type="text/css">
+=======
+<link href="agencyStyle.css" rel="stylesheet" type="text/css">
+<link href="leftColumn.css" rel="stylesheet" type="text/css">
+<link href="rightColumn.css" rel="stylesheet" type="text/css">
+>>>>>>> ec65c2541c95aa6c63726dfdc0165896d5b56f07
 <style type="text/css">
 
 body {
@@ -136,7 +142,11 @@ MEDIA QUERIES
 <link rel='stylesheet' type='text/css' href='fullcalendar-1.5.4/fullcalendar/fullcalendar.print.css' media='print' />
 <script type='text/javascript' src='fullcalendar-1.5.4/jquery/jquery-1.8.1.min.js'></script>
 <!--  <script type='text/javascript' src='fullcalendar-1.5.4/jquery/jquery-ui-1.8.23.custom.min.js'></script>-->
+<<<<<<< HEAD
 <script type='text/javascript' src='fullcalendar-1.5.4/fullcalendar/fullcalendar.js'></script>
+=======
+<script type='text/javascript' src='fullcalendar-1.5.4/fullcalendar/fullcalendar.min.js'></script>
+>>>>>>> ec65c2541c95aa6c63726dfdc0165896d5b56f07
 <script type='text/javascript'>
 
 	$(document).ready(function() {

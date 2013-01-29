@@ -5,5 +5,10 @@ USER_PREFERENCE=overrideGlobalPreferencestruedisableAllValidationfalseversion1.2
 eclipse.preferences.version=1
 override=true
 suspend=false
+<<<<<<< HEAD
 vals/org.eclipse.wst.jsdt.web.core.JsBatchValidator/groups=0107include01113projectNature134org.eclipse.wst.jsdt.core.jsNature0107include11007fileext04htmlF07fileext05xhtmlF07fileext03htmF07fileext04htplF07fileext03jspF07fileext03jsfF07fileext03jsvF07fileext04jtplF111contentType136org.eclipse.wst.html.core.htmlsourceT111contentType134org.eclipse.jst.jsp.core.jspsourceT0107exclude0104file119jquery-1.8.1.min.jsF01
+=======
+vals/org.eclipse.wst.jsdt.web.core.JsBatchValidator/global=TT02
+vals/org.eclipse.wst.jsdt.web.core.JsBatchValidator/groups=0107include02113projectNature134org.eclipse.wst.jsdt.core.jsNature04file119jquery-1.8.1.min.jsF010107include11007fileext04htmlF07fileext05xhtmlF07fileext03htmF07fileext04htplF07fileext03jspF07fileext03jsfF07fileext03jsvF07fileext04jtplF111contentType136org.eclipse.wst.html.core.htmlsourceT111contentType134org.eclipse.jst.jsp.core.jspsourceT0107exclude00
+>>>>>>> ec65c2541c95aa6c63726dfdc0165896d5b56f07
 vf.version=3

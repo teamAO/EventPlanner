@@ -1,0 +1,5 @@
+#centerPanel{padding-right:120px}
+#rightPanel{display:block;border:solid 4px #5b779f;padding:0;width:100px;margin-top:5px;margin-right:2px}
+@media print{#rightPanel{display:none}
+#centerPanel{padding-right:0}
+}

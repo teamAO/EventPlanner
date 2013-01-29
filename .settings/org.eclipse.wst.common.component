@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="EventPlanner">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="EventPlanner"/>
         <property name="java-output-path" value="/EventPlanner/build/classes"/>
+=======
+    <wb-module deploy-name="EventPlannerApp">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="EventPlannerApp"/>
+        <property name="java-output-path" value="/EventPlannerApp/build/classes"/>
+>>>>>>> ec65c2541c95aa6c63726dfdc0165896d5b56f07
     </wb-module>
 </project-modules>

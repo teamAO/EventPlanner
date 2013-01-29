@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>EventPlanner</name>
+=======
+	<name>EventPlannerApp</name>
+>>>>>>> ec65c2541c95aa6c63726dfdc0165896d5b56f07
 	<comment></comment>
 	<projects>
 	</projects>

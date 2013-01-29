@@ -1,0 +1,640 @@
+/*! normalize.css v1.0.1 | MIT License | http://git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none;height:0}
+[hidden]{display:none}
+html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html,button,input,select,textarea{font-family:Verdana,Arial,sans-serif}
+body{font-size:.688em;margin:0}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+h2{font-size:1.5em;margin:.83em 0}
+h3{font-size:1.17em;margin:1em 0}
+h4{font-size:1em;margin:1.33em 0}
+h5{font-size:.83em;margin:1.67em 0}
+h6{font-size:.75em;margin:2.33em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+blockquote{margin:1em 40px}
+dfn{font-style:italic}
+mark{background:#ff0;color:#000}
+p,pre{margin:1em 0}
+code,kbd,pre,samp{font-family:monospace,serif;_font-family:"courier new",monospace;font-size:1em}
+pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}
+q{quotes:none}
+q:before,q:after{content:"";content:none}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+dl,menu,ol,ul{margin:1em 0}
+dd{margin:0 0 0 40px}
+menu,ol,ul{padding:0 0 0 40px}
+nav ul,nav ol{list-style:none;list-style-image:none}
+img{border:0;-ms-interpolation-mode:bicubic}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+form{margin:0}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0;white-space:normal;*margin-left:-7px}
+button,input,select,textarea{font-size:100%;margin:2px}
+td,label,button,input,select,textarea{vertical-align:middle}
+button,input{line-height:normal}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+thead th{text-align:center}
+.errored,.erred,.errorField{background-color:#ff9}
+input[type='checkbox'],input[type='radio']{-moz-margin-start:5px;-moz-margin-end:5px}
+input[type='checkbox'].erred,input[type='radio'].erred,input[type='checkbox'].errored,input[type='radio'].errored,input[type='checkbox'].errorField,input[type='radio'].errorField{outline-style:solid;outline-width:5px;outline-color:#ff9}
+.errorText{font-weight:bold;color:#dc143c}
+.errorContainer{width:100%;margin:0 0 10px 0;padding:0;position:relative}
+.errorContainer .ignoreErrors{margin:15px 25px;float:right;line-height:1.5em}
+.errorContainer .ignoreErrors label{vertical-align:top}
+ul.errorMessages,ul.infoMessages,.displayPanel ul.errorMessages,.displayPanel ul.infoMessages{border:4px solid;padding:16px 0;margin:5px 0 5px 0;background-color:white;background-repeat:no-repeat;list-style-type:disc}
+ul.errorMessages,displayPanel ul.errorMessages{border-color:#c33;background-position:10px 50%}
+ul.infoMessages,.displayPanel ul.infoMessages{border-color:#0faeeb;background-position:12px 50%}
+ul.errorMessages{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/error.png")}
+ul.infoMessages{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/informational.png")}
+.tabPanel ul.infoMessages,.tabPanel ul.errorMessages{margin:2px 10px 2px 10px;padding-top:20px;padding-bottom:20px}
+.errorContainer ul.errorMessages,.errorContainer ul.infoMessages{padding-right:120px}
+ul.errorMessages li,ul.infoMessages li{font-weight:bold;margin-left:80px}
+ul.errorMessages li{color:#c33}
+ul.infoMessages li{color:black}
+.G07v4-message-box,.G07v5-message-box,.G07v6-message-box,.G07v7-message-box{margin:1em 1%;background-color:white}
+.G07v4-message-box ul,.G07v5-message-box ul,.G07v6-message-box ul,.G07v7-message-box ul{padding:2em 13% 2em 80px;list-style-type:disc;line-height:15px;border:4px solid;font-weight:bold;background:no-repeat 13px 50%;margin:0}
+.G07v4-message-box ul{border-color:#c33;color:#c33;background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/error.png");background-position:10px 50%}
+.G07v5-message-box ul{border-color:#dc8603;background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/warning.png")}
+.G07v6-message-box ul{border-color:#0faeeb;background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/informational.png")}
+.G07v7-message-box ul{border-color:#58b100;background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/success.png");background-position:12px 50%}
+.ignore-errors-container{float:right;margin:2em 3%}
+.G07v4x1-inline-message,.G07v5x1-inline-message,.G07v7x1-inline-message{background-repeat:no-repeat;background-position:8px 50%;padding-left:30px;line-height:20px;display:inline-block;vertical-align:middle}
+.G07v4x1-inline-message{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/errorSmall.png");color:#c33}
+.G07v5x1-inline-message{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/warningSmall.png")}
+.G07v7x1-inline-message{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/successSmall.png")}
+fieldset{border-width:0;padding:0;margin:0 0 5px 0;line-height:1.9em}
+fieldset label{width:30%;text-align:right;float:left;margin:2px 5px 2px 0}
+fieldset div{float:left;clear:left;width:100%}
+fieldset select,fieldset input,fieldset textarea{vertical-align:middle;margin:2px 0}
+fieldset textarea{overflow:auto}
+fieldset .additionalLabel{width:auto;text-align:left;float:none}
+fieldset.reverseLayout{text-align:right}
+fieldset.reverseLayout label{width:70%;text-align:left;float:right;padding-left:5px}
+legend.noBackground{background:0}
+fieldset.collapsed *{display:none}
+fieldset.collapsed legend{display:inline}
+fieldset.collapsed .fieldsetHeading{display:block}
+fieldset.collapsible legend *,fieldset.collapsible .fieldsetHeading *{display:inline}
+fieldset.collapsible .visibleCollapsed{display:none}
+fieldset.collapsed .visibleAlways,fieldset.collapsed .visibleCollapsed{display:block}
+fieldset.collapsible legend,fieldset.collapsible .fieldsetHeading{cursor:pointer}
+#footer{text-align:center;margin-top:20px}
+#footer hr{width:100%}
+#footer p{margin-top:0}
+.G01{border-top:solid 1px black;text-align:center;margin:20px 10px;padding-top:10px;line-height:20px}
+.G01 a{margin:5px}
+#header{height:48px;background:#2b345d;color:#fff}
+#header h1,#header h2{text-transform:lowercase;position:absolute;left:0;top:26px;z-index:2;padding:0 0 0 15px;margin:0;font-size:1em;letter-spacing:4px;white-space:nowrap;overflow:hidden;background-color:#2b345d}
+#header h2{width:100%;text-align:center;background-color:transparent;z-index:1;padding:0}
+#header a:link,#header a:visited,#header a:hover,#header a:active{color:#fff;padding:0}
+#header #headerTopLinks{position:absolute;right:0;z-index:1;padding:0 8px 0 0;font-weight:bold;background-color:#2b345d}
+#header #headerTopLinks a{background-image:none;padding-right:auto}
+#header #headerBottomLinks{list-style-type:none;position:absolute;right:0;top:28px;padding:0 8px 0 0;margin:0;z-index:2;background-color:#2b345d}
+#header #headerBottomLinks li{padding:0 3px;float:left}
+#header #headerBottomLinks ul{position:absolute;margin:0;padding:0;display:none;z-index:1;border:2px solid #2b345d;background-color:white}
+#header #headerBottomLinks li a{display:block;width:auto}
+#header #headerBottomLinks li ul{width:auto;background-color:white}
+#header #headerBottomLinks li:hover ul{display:block}
+#header #headerBottomLinks li ul li{padding:0;width:auto;display:block;float:none;border:1px solid white}
+#header #headerBottomLinks li ul li a{padding:2px;margin:0;display:block;width:auto;color:black;background-color:white;text-align:left;white-space:nowrap}
+#header #headerBottomLinks li ul li a:hover{color:black;background-color:#d3d3d3;text-decoration:none}
+#header #headerBottomLinks SPAN.disabled{background-color:transparent;color:gray}
+#ribbon{border-top:3px solid #5b779f;background:#dedede url('/aoenv/images/corporateGraphics/background/grayGradient.png') repeat-x;padding:2px 0 2px 2px;line-height:1.1em;overflow:hidden}
+#ribbon #date{padding-right:8px}
+#ribbon table{table-layout:fixed;width:100%;overflow:hidden;border-collapse:collapse}
+#ribbon td{width:33%;white-space:nowrap;overflow:hidden;padding-left:4px}
+#leftPanel{background:#2b345d;color:white;position:absolute;left:0;display:none}
+#rightPanel{position:absolute;right:0;display:none}
+@media print{#headerLinks{display:none}
+}
+a img{border:0}
+a:link,a:visited{text-decoration:none;color:#33b;color:#192ce7}
+a:hover{text-decoration:underline}
+img[src$='/images/corporateGraphics/help/helpLink.png']{cursor:pointer}
+a.newWindow,a.newWindowNoMenu,a[onclick ^="openNewWindow("],a[onclick ^="sptOpenNewWindow("]{background:url("/aoenv/images/corporateGraphics/icons/iconExternal.png") center right no-repeat;padding-right:13px}
+a[href ^="mailto:"],a[href ^="MAILTO:"]{background:url("/aoenv/images/corporateGraphics/icons/iconMail.png") center right no-repeat;padding-right:18px}
+a[href $=".doc"],a[href $=".DOC"],a[href $= ".DOC');"],a[href $= ".doc');"]{background:url("/aoenv/images/corporateGraphics/icons/iconWord.png") center right no-repeat;padding-right:18px}
+a[href $=".pdf"],a[href $=".PDF"],a[href $= ".pdf');"],a[href $= ".PDF');"]{background:url("/aoenv/images/corporateGraphics/icons/iconPDF.png") center right no-repeat;padding-right:18px}
+a[href $=".mov"],a[href $=".MOV"],a[href $=".avi"],a[href $=".AVI"],a[href $=".mpeg"],a[href $=".MPEG"],a[href $=".mpg"],a[href $=".MPG"],a[href $=".wmv"],a[href $=".WMV"],a[href ^="http://www.auto-owners.com/video/"],a[href ^="http://auto-owners.com/video/"]{background:url("/aoenv/images/corporateGraphics/icons/iconVideo.png") center right no-repeat;padding-right:18px}
+a[href $=".mp3"],a[href $=".MP3"]{background:url("/aoenv/images/corporateGraphics/icons/iconAudio.png") center right no-repeat;padding-right:18px}
+.navigation{margin:20px 5px 5px 5px;border:2px solid #000}
+.navigation h3{background:#2b345d url('/aoenv/images/agencyportal/navBarHeader.jpg');font-size:1.1em;text-align:center;margin:0;padding:3px}
+a span{padding:3px;padding:0 3px 0 3px}
+.navigation a span{display:inline-block;padding:3px;padding:0 3px 0 3px}
+.navigation ul{list-style-type:none;margin:0;padding:0}
+.navigation a:link,.navigation a:hover,.navigation a:active,.navigation a:visited{text-decoration:none;color:#fff;cursor:pointer;width:100%;display:block;padding:3px 0 3px 0}
+.navigation li{border-top:1px solid #2b345d;font-weight:normal;width:100%}
+.navigation li a:hover{background:#5b779f url('/aoenv/images/agencyportal/navBarHover.jpg')}
+.selectedLink a{background:#5b779f url('/aoenv/images/agencyportal/navBarHover.jpg')}
+.link a{background:#5b779f url('/aoenv/images/agencyportal/navBarLink.jpg')}
+.navigation ul li ul li{margin:0;padding:0;font-weight:normal;font-size:.9em;border-top:1px solid #2b345d}
+.navigation ul li ul li a:link,.navigation ul li ul li a:visited,.navigation ul li ul li a:active{text-decoration:none;color:#2b345d;background:#faf0e6}
+.navigation ul li ul li a:hover{background:#dcc5af}
+.navigation ul li ul li a.current:link,.navigation ul li ul li a.current:visited,.navigation ul li ul li a.current:active{background:#dcc5af}
+@media print{#leftPanel{display:none}
+#mainContainer{margin-left:0}
+}
+table.paging td.pagingDisabledFirst{background-image:url('/aoenv/images/corporateGraphics/paging/DisabledFirstPageTrns.png');background-repeat:no-repeat;background-position:center center;width:16px}
+table.paging td.pagingDisabledPrevious{background-image:url('/aoenv/images/corporateGraphics/paging/DisabledPreviousPageTrns.png');background-repeat:no-repeat;background-position:center center;width:8px}
+table.paging td.pagingFirst{width:16px}
+table.paging td.pagingFirst a{display:block;background-image:url('/aoenv/images/corporateGraphics/paging/FirstPageTrns.png');background-repeat:no-repeat;background-position:center center;width:16px;text-decoration:none}
+table.paging td.pagingPrevious a{display:block;background-image:url('/aoenv/images/corporateGraphics/paging/PreviousPageTrns.png');background-repeat:no-repeat;background-position:center center;width:8px;text-decoration:none}
+table.paging td.pagingNext a{display:block;background-image:url('/aoenv/images/corporateGraphics/paging/NextPageTrns.png');background-repeat:no-repeat;background-position:center center;width:8px;text-decoration:none}
+table.paging td.pagingLast a{display:block;background-image:url('/aoenv/images/corporateGraphics/paging/LastPageTrns.png');background-repeat:no-repeat;background-position:center center;width:16px;text-decoration:none}
+table.paging td.pagingDisabledNext{background-image:url('/aoenv/images/corporateGraphics/paging/DisabledNextPageTrns.png');background-repeat:no-repeat;background-position:center center;width:8px}
+table.paging td.pagingDisabledLast{background-image:url('/aoenv/images/corporateGraphics/paging/DisabledLastPageTrns.png');background-repeat:no-repeat;background-position:center center;width:16px}
+#processingIndicator{position:absolute;left:0;right:0;bottom:0;padding:5px 0 0 0;height:20px;margin:0;width:100%;background:#ff9;text-align:center;z-index:5;font-weight:bold;font-size:1em}
+#processingIndicator img{vertical-align:middle;padding-right:2px}
+body>#processingIndicator{position:fixed}
+#processingShield{width:100%;height:100%;position:absolute;top:0;right:0;bottom:0;left:0;z-index:6;background:#fff;opacity:0;-ms-filter:'alpha(opacity=0)';filter:alpha(opacity=0)}
+body>#processingShield{position:fixed}
+.processingIndicator{clear:none;width:16px;height:16px;display:inline-block;margin:3px 0 0 5px}
+.processingIndicator.white{background-image:url(/aoenv/images/corporateGraphics/processing/spinWhite.gif)}
+.processingIndicator.yellow{background-image:url(/aoenv/images/corporateGraphics/processing/spinYellow.gif)}
+#rightPanel h2{background:#5b779f;text-align:center;color:#fff;margin:0;font-size:1.2em;padding:4px 0}
+#rightPanel p{padding:4px;margin:6px 0}
+#rightPanel a:link,#rightPanel a:hover,#rightPanel a:active,#rightPanel a:visited{color:blue;text-decoration:underline;font-size:1.1em}
+.S01v2{float:right;width:140px;border:4px solid #5b779f;text-align:center}
+.S01v2 h3{color:white;background-color:#5b779f;margin:0;margin-bottom:5px;font-size:1.1em}
+.S01v2 p{padding-bottom:10px}
+html .S01v2 h4{font-size:120%;text-decoration:underline}
+.S01v2 p.disclaimer{font-size:90%}
+@media print{#rightPanel{display:none}
+#centerPanel{padding-right:0}
+}
+.panelButtons .advanced{float:left}
+.contentPanel{margin-left:20px;margin-right:20px}
+.contentPanel h2{color:#fff;font-size:1.5em;background:#5b779f;margin-top:10px;margin-left:-20px;margin-right:-20px;padding:4px;padding-left:15px;font-weight:normal}
+.contentPanel h3{color:#000;font-size:1.3em}
+.contentPanel p{font-size:1em;margin:0}
+.contentPanel .panelButtons{text-align:right}
+.contentPanel input{font-size:1em}
+.listOfLinks{list-style:none}
+.listOfLinks ul{margin-bottom:2em}
+.listOfLinks ul li{list-style:disc}
+.N05{margin:10px 0 10px 0;padding:0;width:100%;border-bottom:3px solid #5b779f;list-style-type:none;height:34px}
+.N05>li{float:left;background:url("/aoenv/images/corporateGraphics/tabs/displayTabsLeft.png") no-repeat #5b779f left top;font-weight:bold;cursor:pointer;margin:0 1px;line-height:35px;font-size:1.2em;border-bottom:0;padding-left:10px;position:relative;left:10px;color:white}
+.N05 li a{color:white}
+.N05 li:hover{color:black;background-position:left -35px;background-color:white}
+.N05 li:hover a{color:black;text-decoration:none}
+.N05>li span{background:url("/aoenv/images/corporateGraphics/tabs/displayTabsRight.png") no-repeat right top;display:block;padding:0 15px 0 5px}
+.N05 li:hover span{background-position:right -35px}
+.N05 li.current{color:black;background-color:white;background-position:left -70px}
+.N05 li.current a{color:black}
+.N05 li.current span{background-position:right -70px;padding-bottom:2px}
+.N05 li.disabled{cursor:default;color:#7a7e81;background-color:#d3d3d3;background-position:left -108px;line-height:34px}
+.N05 li.disabled a{color:#7a7e81;pointer-events:none;cursor:default}
+.N05 li.disabled span{background-position:right -108px}
+.N05 li.disabled a,.N05 li.current a{pointer-events:none}
+.N05 li.disabled,.N05 li.current{cursor:default}
+.N05v4{font-size:14px;margin:15px 0 30px 12px;padding:0;clear:left}
+.N05v4 li{display:inline;padding:0 6px;white-space:nowrap}
+.N05v4 li.current{font-weight:bold}
+.N05v4 li.disabled{color:#d3d3d3}
+.N05v4 li:first-child ~ li:before{content:'|';padding:0 10px;margin-left:-10px;font-weight:normal;color:black}
+.N05 li .N05v5{display:none}
+.N05 li:hover .N05v5{display:block;background:white;z-index:1}
+.N05 li .N05v5{position:absolute;white-space:nowrap;left:0;margin:0;padding:10px 0 0;border:2px solid #5b779f;border-top:0}
+.N05 li .N05v5 li{display:block;background-color:white;left:0;line-height:25px;font-size:14px;font-weight:normal;margin:0;padding:0 10px}
+.N05 li .N05v5 li a{color:black;padding-right:10px}
+.N05 li .N05v5 li:hover{-moz-transition-property:background-color;-moz-transition-duration:.2s;-webkit-transition-property:background-color;-webkit-transition-duration:.2s;-o-transition-property:background-color;-o-transition-duration:.2s;transition-property:background-color;transition-duration:.2s;background-color:#93b7ee}
+.N05 li .N05v5 li.disabled{color:#7a7e81}
+.N05 li .N05v5 li.disabled:hover{background-color:white}
+.displayPanel{overflow:hidden;margin-top:15px}
+.displayPanel ul{padding:0;margin:0;list-style-type:none}
+.displayPanel ul.verticalNav{float:left;font-size:14px;padding-left:15px;line-height:22px;margin-top:20px;clear:left}
+.displayPanel .verticalNav li.current a{color:black;font-weight:bold}
+.displayPanel .verticalNav li.current a:hover{cursor:default;text-decoration:none}
+.displayPanel .content{min-height:150px;margin-top:20px;padding:10px 0 0 10px}
+.displayPanel ul.verticalNav+.content{border-left:3px dotted #5b779f;margin-left:175px}
+.displayPanel h3,.C02v2,.C02v3{color:#5b779f;font-size:18px;font-weight:normal;border-bottom:solid 2px #5b779f;margin:10px;padding-left:2px}
+.C02v3{cursor:pointer}
+.C02v3 span{float:left;width:15px}
+.C02v3.expanded span{width:14px;padding-left:1px}
+.C02v3+.expandable-content{display:none}
+.C02v3.expanded+.expandable-content{display:block}
+.displayPanel h4{font-weight:bold;font-size:16px;margin:10px 0}
+.displayPanel h5{font-weight:bold;font-size:12px;margin:5px 0 0}
+.displayPanel .section{overflow:hidden;margin:10px 10px 30px 3%}
+.displayPanel .section a:link,.displayPanel .section a:visited{text-decoration:underline}
+.displayPanel .column{max-width:725px}
+.displayPanel .twoColumn .column{max-width:400px;margin-right:2%}
+.displayPanel .threeColumn .column{margin-right:2%}
+.displayPanel .column.large{max-width:1050px}
+.displayPanel .expandable-header{background:url('/aoenv/images/corporateGraphics/plusSign/expandPlus_small.png') no-repeat 0 2px;padding-left:17px;cursor:pointer;font-weight:bold}
+.ie9 .displayPanel .expandable-header{background-position:0 0}
+.displayPanel .expanded .expandable-header{background-image:url('/aoenv/images/corporateGraphics/minus/collapseMinus_small.png')}
+.displayPanel .expandable-content .expandable-header{background-image:url('/aoenv/images/corporateGraphics/plusSign/expandPlus_small.png')}
+.displayPanel .expandable-content .expanded .expandable-header{background-image:url('/aoenv/images/corporateGraphics/minus/collapseMinus_small.png')}
+.displayPanel .expandable-header span,.displayPanel .expandable-header.notBold{font-weight:normal}
+.displayPanel .expandable-content{display:none;padding-bottom:15px}
+.displayPanel .expanded>.expandable-content{display:block}
+html:not(.ie7) .displayPanel .expanded>tr.expandable-content,.ie8 .displayPanel .expanded>tr.expandable-content{display:table-row}
+.displayPanel table{border-collapse:collapse}
+.displayPanel table.fixed{table-layout:fixed;width:100%}
+.displayPanel th,.displayPanel td{vertical-align:top;padding:4px}
+.displayPanel th[scope='col']{text-decoration:underline;padding-bottom:8px;vertical-align:bottom}
+.displayPanel th[scope='row']{text-align:left;padding-right:16px}
+.displayPanel th[scope='row'].alignRight{text-align:right}
+.displayPanel .deleted *{text-decoration:line-through}
+.displayPanel .description{width:250px;text-align:left}
+.displayPanel .premium,.displayPanel .amount{width:100px;text-align:right}
+.displayPanel .separatedList{table-layout:fixed;width:100%}
+.displayPanel .separatedList>thead th[scope="col"]{padding-bottom:0}
+.displayPanel .separatedList>tbody>tr:first-child>*{padding-bottom:15px;padding-top:15px}
+.displayPanel .separatedList>tbody>tr:first-child>*:first-child{padding-left:25px}
+.displayPanel .separatedList>.expanded>tr:first-child>*{padding-bottom:4px;background-position:0 80%}
+.displayPanel .separatedList .expandable-content>td{padding-left:42px}
+.displayPanel .separatedList .expandable-content .expandable-content>td{padding-left:17px}
+.displayPanel .separatedList .fixed{width:98%}
+.displayPanel .separatedList>tbody ~ tbody>tr:first-child>*{border-top:solid 1px #5b779f}
+.displayPanel .separatedList .noneFoundMessage{margin-top:4px;margin-bottom:5px}
+.displayPanel .content ul ul{margin-left:25px}
+.displayPanel .content li{padding:4px}
+.displayPanel td>ul:first-child>li:first-child{padding-top:0}
+.inputPanel{border:solid 4px #5b779f;border-top:solid 5px #5b779f;background:#faf0e6;color:black;font-size:1em;margin-top:5px;margin-bottom:10px;margin-top:10px}
+.inputPanel form{margin:0;padding:0}
+.inputPanel p{margin:0;margin-left:5px;margin-right:5px}
+.inputPanel h2{display:inline;color:#fff;font-size:1.5em;font-weight:normal;background:#5b779f url('/aoenv/images/corporateGraphics/panels/inputPanelHeaderCorner.png') no-repeat right bottom;padding-bottom:1px;padding-left:5px;padding-right:20px;background-repeat:no-repeat;border-top:1px solid #5b779f}
+.inputPanel input{font-size:1em}
+.inputPanelContent{padding-top:10px;padding-bottom:5px;padding-left:4px;padding-right:4px}
+.inputPanel .panelButtons{text-align:right;padding-bottom:5px;padding-left:4px;padding-right:4px}
+.inputPanelContent .panelButtons{padding:0}
+.listingPanel{margin-bottom:10px}
+.listing{width:100%;border:solid 4px #5b779f;border-top:solid 5px #5b779f;background:#faf0e6;color:black;font-size:1em;margin-top:5px;padding-bottom:5px}
+.listing th{background:#dedede url('/aoenv/images/corporateGraphics/background/grayGradient.png') repeat-x;color:#000;font-size:1.1em;padding:2px;margin:0;font-weight:bold;text-align:left}
+.listing th a:link,.listing th a:active,.listing th a:visited{color:black}
+.listing th a:hover{text-decoration:underline}
+.listing td{padding:2px}
+.listing .oddRow td{background-color:#faf0e6;border-top:1px solid #dcc5af}
+.listing .oddRowOptions{background:#dcc5af url('/aoenv/images/agencyportal/bar.png') repeat-x;text-align:center;padding:0;margin:0}
+.listing .oddRowOptions td{padding:0}
+.listing .evenRow td{background-color:#faf0e6;border-top:1px solid #dcc5af}
+.listing .evenRowOptions{background:#dcc5af url('/aoenv/images/agencyportal/bar.png') repeat-x;text-align:center;padding:0;margin:0}
+.listing .evenRowOptions td{padding:0}
+.listing .rowOptionsDiv{margin:0 10px 10px 10px;border:1px solid #999;border-top:0;background-color:#faf0e6;padding:5px;width:90%;text-align:left}
+.listing fieldset{border:0;padding:0;margin-bottom:5px}
+.listing fieldset label{width:30%;text-align:right;float:left;margin-right:5px;margin-top:2px}
+.listing caption{background:#5b779f;color:white;font-size:1.5em;font-weight:bold;padding:3px 3px 0 3px}
+.listing .multiOptions{background:#5b779f}
+.listing .panelButtons{text-align:right}
+.listing tfoot{padding-top:2px;text-align:right;font-size:1em;padding:20px}
+.listing tfoot a:link,tfoot a:hover,tfoot a:active,tfoot a:visited{padding:2px;color:#fff}
+.paging{text-align:right;font-weight:bold;margin-left:auto;margin-right:0}
+.paging a{font-weight:normal;color:black;text-decoration:underline;margin-left:2px}
+.paging img{vertical-align:middle}
+.resultsPerPage{text-align:right;font-weight:bold;padding-bottom:3px}
+.resultsPerPage a{font-weight:normal;color:black;text-decoration:underline;margin-left:2px}
+.resultsPerPage img{vertical-align:middle}
+fieldset.advanced{display:none}
+fieldset span.staticAnswer{margin:2px 0;float:left;clear:none}
+div.guidedSearch{background:white;width:150px;float:right;border:1px solid #5b779f;margin:5px 0 0 10px;padding:0}
+div.guidedSearch h3{margin:0;padding:2px;background:#5b779f;color:white;font-size:1.3em}
+div.guidedSearch ul{margin:2px;padding:0;list-style-type:none}
+div.guidedSearch li{margin:5px 0 2px 0;padding:0}
+table.C08v1{width:100%;border-style:solid;border-color:#5b779f;border-width:5px 4px 4px 4px;background:#faf0e6;color:black;font-size:1em;margin-top:5px}
+table.C08v1 th{background:#dedede}
+div.rowOptionsDiv{margin-top:8px}
+table.C08v1 thead th{background:#dedede url('/aoenv/images/corporateGraphics/background/grayGradient.png') repeat-x;color:#000;font-size:1.1em;padding:2px;margin:0;font-weight:bold;text-align:left}
+table.C08v1 thead th a:link,table.C08v1 thead th a:active,table.C08v1 thead th a:visited{color:black}
+table.C08v1 thead th a:hover{text-decoration:underline}
+table.C08v1 tfoot td{background:#5b779f;border:0;padding:5px}
+table.C08v1 td{padding:2px}
+table.C08v1 .oddRow td{background-color:#faf0e6;border-top:1px solid #dcc5af;cursor:pointer}
+table.C08v1 .oddRow th{border-top:1px solid #bbb}
+table.C08v1 .oddRowDetail{padding:0;margin:0}
+table.C08v1 .oddRowDetail td{padding:0 5px 5px 5px;border-width:0;border-color:#dccfaf;border-style:solid}
+table.C08v1 .evenRow td{background-color:#faf0e6;border-top:1px solid #dcc5af;cursor:pointer}
+table.C08v1 .evenRow th{border-top:1px solid #bbb}
+table.C08v1 .evenRowDetail{padding:0;margin:0}
+table.C08v1 .evenRowDetail td{padding:0 5px 5px 5px}
+table.C08v1 fieldset{border:0;padding:0;margin-bottom:5px}
+table.C08v1 fieldset label{width:30%;text-align:right;float:left;margin-right:5px;margin-top:2px}
+table.C08v1 fieldset label.additionalLabel{width:auto;text-align:left;float:none;margin:0}
+table.C08v1 caption{text-align:left;display:none}
+table.C08v1 caption h2{display:inline;color:#fff;font-size:1.5em;font-weight:normal;background:no-repeat right bottom #5b779f url('/aoenv/images/agencyportal/listingHeaderCorner.png');padding-bottom:1px;padding-left:5px;padding-right:20px;border-top:1px solid #5b779f}
+table.C08v1 .panelButtons{text-align:right}
+table.C08v1 .pannelButtons .advanced{float:left}
+table.C08v1 .paging{text-align:right;font-weight:bold}
+table.C08v1 .paging a{font-weight:normal;color:black;text-decoration:underline;margin-left:2px}
+table.C08v1 .paging img{vertical-align:middle}
+table.C08v1 fieldset.advanced{display:none}
+table.C08v1 .ascending{background:url('/aoenv/images/agencyportal/arrowUp.gif') right bottom no-repeat;padding-right:12px}
+table.C08v1 .descending{background:url('/aoenv/images/agencyportal/arrowDown.gif') right bottom no-repeat;padding-right:12px}
+table.C08v1 .sortable a:hover{background:url('/aoenv/images/agencyportal/arrowDownRed.gif') right bottom no-repeat;padding-right:12px}
+table.C08v1 a.ascending:hover{background:url('/aoenv/images/agencyportal/arrowDownRed.gif') right bottom no-repeat;padding-right:12px}
+table.C08v1 a.descending:hover{background:url('/aoenv/images/agencyportal/arrowUpRed.gif') right bottom no-repeat;padding-right:12px}
+table.C08v1 .collapseDetail{display:block;width:15px;height:15px;background-image:url('/aoenv/images/agencyportal/thelittlerMinus.jpg');background-repeat:no-repeat;background-position:50% 50%}
+table.C08v1 .expandDetail{display:block;width:15px;height:15px;background-image:url('/aoenv/images/agencyportal/thelittlerPlus.jpg');background-repeat:no-repeat;background-position:50% 50%}
+table.C08v1 th.control{background-color:#5b779f;background-image:none;border-width:0}
+table.C08v1 th.controller{background-color:#5b779f;background-image:none;border:0;padding-right:4px}
+table.C08v1 th{background-color:#5b779f;background-image:none}
+table.C08v1 tr.evenRow td{background-repeat:repeat-x;background-position:bottom}
+table.C08v1 tr.oddRow td{background-repeat:repeat-x;background-position:bottom}
+table.C08v1 tr.evenRowDetail td{background-color:#f2e5d8;background-image:url('/aoenv/images/agencyportal/brownRibbon.jpg');background-repeat:repeat-x;background-position:top}
+table.C08v1 tr.oddRowDetail td{background-color:#f2e5d8;background-image:url('/aoenv/images/agencyportal/brownRibbon.jpg');background-repeat:repeat-x;background-position:top}
+table.C08v1 th.control{color:white;background:#5b779f;text-align:center}
+table.C08v1 th.controller a{margin-left:auto;margin-right:auto}
+table.C08v1 caption{background:#5b779f;color:white;text-align:center;font-weight:bold;font-size:1.4em;padding:4px 0 0 0;background-image:url('/aoenv/images/agencyportal/blueRibbon.jpg');background-repeat:repeat-x}
+table.C08v1 tr.hover td{background-color:#dccfaf;background-image:none}
+span.expandAllListings{background-image:url(/aoenv/images/agencyportal/thelittlerPlus.jpg);background-repeat:no-repeat}
+span.collapseAllListings{background-image:url(/aoenv/images/agencyportal/thelittlerMinus.jpg);background-repeat:no-repeat}
+span.expandAllListings,span.collapseAllListings{padding-left:17px;cursor:pointer}
+div.expandAllCollapseAll{color:white;background-color:#5b779f;border-style:none;border:0;padding-left:3px;padding-top:4px;padding-right:3px;margin-top:5px}
+.simpleTabPanel{background:#5b779f;margin:0 -4px 0 -4px;padding:0;vertical-align:top;border-bottom:1px solid #5b779f}
+.simpleTabPanel h2{background:#5b779f;margin:0 0 0 5px;padding:0;font-size:1.5em}
+.simpleTabPanel ul{font-size:1.1em;font-weight:bold;text-align:left;display:inline;margin:0 0 0 5px;padding:0}
+.simpleTabPanel li{vertical-align:bottom;margin:0;padding:0;display:inline;background:#dcc5af url('/aoenv/images/corporateGraphics/tabs/tabCornerOffRight.png') no-repeat right top;border-bottom:1px solid #5b779f}
+.simpleTabPanel a{cursor:pointer;color:#8e7358;background:#dcc5af url('/aoenv/images/corporateGraphics/tabs/tabCornerOffLeft.png') no-repeat left top;text-decoration:none;margin-right:14px;padding-left:15px}
+.simpleTabPanel li a:link,.simpleTabPanel li a:visited{text-decoration:none;color:#8e7358}
+.simpleTabPanel li a:hover{text-decoration:none;color:#2b345d}
+.simpleTabPanel li.current{background:#fbf0de url('/aoenv/images/corporateGraphics/tabs/tabCornerOnRight.png') no-repeat right top;border-bottom:1px solid #faf0e6}
+.simpleTabPanel li.current a,.simpleTabPanel li.current a:link,.simpleTabPanel li.current a:visited,.simpleTabPanel li.current a:hover{color:#2b345d;background:#faf0e6 url('/aoenv/images/corporateGraphics/tabs/tabCornerOnLeft.png') no-repeat left top;padding-bottom:1px}
+.simpleTabPanel li span{margin:0;padding:0}
+.tabPanel{padding:0;margin:10px}
+.mainTab{list-style-type:none;padding:0;background-color:#fff;font-weight:bold;font-size:1.1em;display:block;width:auto;overflow:auto;margin:0;border-bottom:8px solid #5b779f;height:2em}
+.mainTab li{float:left;margin:0;padding:0;background-color:transparent}
+.mainTab a,.mainTab span{background:url("/aoenv/images/corporateGraphics/tabs/stackedRightTab.png") no-repeat right top;background-position:100% -250px;display:block;white-space:nowrap;color:#fff}
+.mainTab a:hover,.subTab a:hover{text-decoration:none}
+.mainTab a span,.mainTab span span{background:url("/aoenv/images/corporateGraphics/tabs/stackedLeftTab.png") no-repeat left top;background-position:0 -250px;padding:0 10px;line-height:2em}
+.mainTab .selected span,.mainTab .selected a{background-position:100% -500px}
+.mainTab .selected span span,.mainTab .selected a span{background-position:0 -500px;cursor:default}
+.mainTab .disabled span{background-position:100% 0}
+.mainTab .disabled span span{background-position:0 0;color:#7a7e81;cursor:default}
+.mainTab li:hover ul{display:block}
+.mainTab ul{position:absolute;margin:0;padding:0;list-style-type:none;display:none;width:auto;color:black;z-index:1;border:2px solid #2b345d;font-weight:normal;font-size:.9em;background-color:#dcc5af}
+.mainTab ul li{padding:0;margin:0;display:block;float:none;width:auto;border:1px solid #dcc5af}
+.mainTab ul a,.mainTab ul span{background-image:none;text-align:left;margin:0;width:auto;display:block;background-color:#dcc5af}
+.mainTab ul a span,.mainTab ul span span{font-weight:bold;padding:0 5px;cursor:pointer;color:black;line-height:1.6em}
+.mainTab ul a:hover span{background-color:#faf0e6}
+.mainTab ul .disabled span span{color:#8e7358;background-image:none;cursor:default}
+.subTab{height:1.6em;list-style:none;padding:3px 0 0 4px;margin:0;background-color:#5b779f;width:auto;clear:both;font-weight:bold;font-size:1em}
+.subTab li{display:block;float:left;background-color:#dcc5af;border-right:1px solid #8e7358}
+.subTab a,.subTab span{padding:.25em 10px;background-color:#dcc5af}
+.subTab a span,.subTab span span{padding:0;line-height:1.6em;color:black}
+.subTab .selected span,.subTab .selected a,.subTab .selected span span,.subTab .selected a span{background-color:white}
+.subTab .selected span span,.subTab .selected a span{padding:0;cursor:default}
+.subTab .disabled{border-color:#7a7e81}
+.subTab .disabled span,.subTab .disabled span span{background-color:#d3d3d3}
+.subTab .disabled span span{padding:0;color:#636363;cursor:default}
+.tabPanel img{border:0;vertical-align:middle;margin-left:3px;margin-right:3px}
+.tabPanel .content{width:auto;padding:10px 0 0 0;border:4px solid #5b779f;border-top:0}
+.tabPanel p{margin:0 8px;padding:auto 10px}
+.tabPanel hr{height:4px;color:#5b779f;background-color:#5b779f;border:0;margin:8px 7%}
+.tabPanel h1{font-size:large;padding-left:5px;margin:0}
+.tabPanel h4{display:inline;font-size:1em;margin-left:5px}
+.tabPanel fieldset{border-top:19px solid #5b779f;padding:16px 10px 0 10px;margin-bottom:16px}
+.tabPanel fieldset.noBorder{border-top:0;padding-top:0}
+.tabPanel fieldset legend,.tabPanel div.fieldsetHeading{font-size:1em;font-weight:bold;color:white;background-color:#5b779f;line-height:19px}
+.tabPanel div.fieldsetHeading{margin-left:-10px;margin-right:-12px;margin-bottom:16px;padding-right:10px;padding-left:12px}
+.tabPanel fieldset input,.tabPanel fieldset textarea{text-transform:uppercase}
+.errorTab{margin:20px 0 0 4px;padding:0;display:block;font-size:small;float:left}
+.errorTab a{display:block;float:left;background:url("/aoenv/images/corporateGraphics/tabs/stackedRightTab.png") no-repeat right top;background-position:100% -500px;white-space:nowrap}
+.errorTab a:hover{text-decoration:none}
+.errorTab span{float:left;background:url("/aoenv/images/corporateGraphics/tabs/stackedLeftTabTBG.png") no-repeat left top;background-position:0 -500px;color:#fff;padding:6px 10px 5px 10px;cursor:pointer}
+.errorBox{clear:left;font-size:1em;margin:0 4px 20px 4px;border:4px solid #5b779f;padding:8px}
+.errorBox table{margin:0;width:100%}
+.errorBox table td,.errorBox table th{text-align:left;font-size:1em;vertical-align:top;margin:auto}
+.errorBox ul{margin:0 0 0 16px}
+.sortable{cursor:pointer;text-decoration:underline}
+.errRow{background-color:#ff9}
+.deleted{text-decoration:line-through;color:#c0c0c0}
+.tabPanel input[type = "button"],.tabPanel input[type = "submit"]{text-transform:none;margin-bottom:2px}
+#ratingFooter{width:auto;background-color:transparent;text-align:center;margin:0;font-size:.82em}
+#ratingFooter p{margin:0 15%}
+#ratingFooter hr{width:80%}
+#notification{position:fixed;bottom:0;z-index:5;padding:0;height:20px;margin:0;width:100%;background-color:#ff9;color:inherit;text-align:center;font-weight:bold;font-size:1.3em;border:0}
+.tabPanel .disabled{color:#bbb}
+.tabPanel li.disabled{background-color:white}
+.N06{margin:10px;padding:0;overflow:hidden}
+.N06>div{float:left;width:100%}
+.N06>div>div{margin-left:143px;border-color:#5b779f;border-style:solid;border-width:2px;padding:10px}
+.N06v3>div>div{background-color:#faf0e6}
+.N06>ul{width:145px;float:left;margin:0 0 0 -100%;list-style-type:none;padding:0;text-align:left}
+.N06>ul li{background-color:#5b779f;color:white;-moz-border-radius:10px 0 0 10px;-webkit-border-radius:10px 0 0 10px;border-radius:10px 0 0 10px;margin-bottom:2px;line-height:32px;border:2px solid transparent;border-right:0}
+.N06>ul li:hover,.N06>ul label:hover{cursor:pointer}
+.N06>ul li.current{background-color:white;color:black;border-color:#5b779f}
+.N06v3>ul li.current{background-color:#faf0e6}
+.N06v2>ul input[type=radio]{margin:0 5px 0 10px;padding:0;position:relative;top:1px}
+.N06>ul span{margin-left:15px;margin-right:20px;font-size:14px}
+.N06v2>ul label{margin-right:20px;font-size:14px}
+.minResolution{min-width:994px}
+.hidden{display:none}
+.standardTable,.C01{border-spacing:0;border-collapse:collapse;border:1px solid #5b779f}
+.standardTable caption,.C01 caption{background-color:#5b779f;color:#fff;font-size:1.3em;padding:3px;font-weight:normal}
+.standardTable th,.standardTable td,.C01 th,.C01 td{border-right:1px solid #5b779f}
+.standardTable th,.C01 th{background:#dedede url('/aoenv/images/corporateGraphics/background/grayGradient.png') repeat-x;padding:5px}
+.standardTable thead th,.C01 thead th{border-bottom:1px solid #5b779f}
+.standardTable td,.C01 td{padding:2px}
+.standardTable .oddRow,.standardTable tr.oddRow th,.C01 .oddRow,.C01 tr.oddRow th{background-color:#fff}
+.standardTable .evenRow,.standardTable tr.evenRow th,.shadedRow,.C01 .evenRow,.C01 tr.evenRow th,.shadedRow{background-color:#eee}
+.standardTable .selectedRow,.C01 .selectedRow{background-color:#dcc5af;color:#2b345d}
+.standardTable tr.oddRow th,.standardTable tr.evenRow th,.C01 tr.oddRow th,.C01 tr.evenRow th{background-image:none;text-align:left}
+.standardTable tfoot td,.C01 tfoot td{border-top:1px solid #5b779f;font-style:italic}
+.doubleSpaced p{margin-top:1em}
+input.day{width:1.5em}
+input.month{width:1.5em}
+input.year{width:3em}
+input.displayOnly{background-color:transparent;border-style:solid;border-color:transparent;padding-left:3px}
+textarea.displayOnly{background-color:transparent;padding-left:3px}
+.F07v1x3_container{float:left;width:auto;clear:none}
+.F07v1x3_container span{display:block}
+.centered{margin-left:auto!important;margin-right:auto!important}
+.right{float:right}
+.alignRight{text-align:right}
+.alignCenter{text-align:center}
+.alignLeft{text-align:left}
+.clear{clear:both}
+.required{color:red}
+.branchOnly{background:url('/aoenv/images/corporateGraphics/icons/branchEntryIcon.png') no-repeat 0 1px;padding:2px 0 2px 20px}
+.money{text-align:right}
+.hidden{display:none}
+.invisible{visibility:hidden}
+.center{text-align:center}
+.precededBySpace{margin-top:15px}
+.twoColumn .column{width:47%;float:left;margin-right:.5em;clear:none}
+.threeColumn .column{width:31%;float:left;margin-right:.5em;clear:none}
+#centerPanel{padding:3px 10px 10px 10px;min-width:482px}
+#centerPanel h1{margin:0;padding:0;font-size:2em;margin-left:0}
+#breadCrumb{padding:0;margin:0;margin-left:10px}
+#breadCrumb ul{display:inline;margin:0;padding:0}
+#breadCrumb ul li{list-style:none;display:inline;padding-left:2px;margin-left:0}
+img[src$="datePicker.png"],img[src$="helpLink.png"],img[src$="helpLinkWhite.png"]{vertical-align:middle}
+.claro .F09.dijitTextBox .dijitArrowButton{clear:none;width:auto}
+.claro .F09.dijitTextBox{clear:none}
+.claro fieldset .F09.dijitTextBox{margin:2px 0;vertical-align:middle}
+.claro .F09.dijitTextBox.dijitTextBoxHover{background:0}
+.claro .F09.dijitTextBox .dijitInputField{line-height:14px}
+body.claro .dijitComboBoxMenu .dijitMenuItemSelected{background-position:0 0}
+body.claro .dijitComboBoxMenuPopup .dijitComboBoxHighlightMatch{background:0;font-weight:bolder}
+body.claro .dijitComboBoxMenuPopup .dijitComboBoxMenu .dijitMenuItem{padding:4px}
+body.claro .dijitComboBoxMenuPopup .dijitComboBoxMenu .dijitMenuItem.newItem{border-top:1px solid #769dc0}
+body.claro .dijitComboBoxMenuPopup .dijitComboBoxMenu .dijitMenuItem.newItem .label{font-style:italic}
+body.claro .dijitMenu.noMatches{position:absolute;padding:4px;color:#7a7e81;font-style:italic}
+.F09.checkboxContainer{width:auto}
+.F09.checkboxContainer.beside{clear:none;margin:0 0 0 5px}
+.F09.checkboxContainer.below{margin:0 0 0 30%;padding:0 0 0 5px}
+.F09 input[type="checkbox"]{margin:0 5px}
+.claro .F09.dijitTextBoxDisabled,.claro .F09.dijitTextBoxDisabled .dijitInputContainer{background-color:transparent}
+body.claro .dijitDialog{background:#fff;overflow-x:hidden;overflow-y:hidden;border:3px solid #2b345d;-moz-box-shadow:0 5px 10px #adadad;-webkit-box-shadow:0 5px 10px #adadad;box-shadow:0 5px 10px #adadad;padding:0}
+body.claro .dijitDialog .dijitDialogPaneContent{padding:0 0 10px 0;clear:left;height:auto}
+body.claro .dijitDialogTitleBar{padding:5px;color:white;background-color:#2b345d;background-image:none;background-repeat:no-repeat;cursor:move;height:15px;border:0}
+body.claro .dijitDialogTitleBar .dijitDialogTitle{font-weight:bold;font-size:1em;padding-left:5px;position:relative;color:white}
+body.claro .dijitDialogCloseIcon{cursor:pointer;position:absolute;right:5px;top:4px;background:url('/aoenv/images/corporateGraphics/controls/close-10px.png') 2px 2px no-repeat;width:14px;height:13px}
+.lightboxPleaseWait{color:black;font-size:25px;font-weight:bold;margin-bottom:1.5em}
+.lightboxPleaseWaitDiv{position:absolute;background-color:white;text-align:center;display:none}
+.lightboxErrorMessage,.dijitDialogPaneContent #smtErrorContainer{text-align:center;padding:20px 20px 0 20px}
+.lightboxHiddenHack{display:none}
+.processing .lightboxPleaseWaitDiv{display:block}
+.processing .dijitDialogPaneContent{visibility:hidden}
+.P01v2{min-height:250px}
+.P01v2 h3{text-align:center;font-size:1.5em;padding:10px 0 2px 0;margin:0}
+.P01v2 ul.printOptions{list-style-type:none;margin:0;padding:0}
+.P01v2 ul.printOptions li{margin:10px 5px 0 20px;clear:both;zoom:1}
+.P01v2 label input{float:left}
+.P01v2 label label{padding-top:3px;margin-left:22px;display:block}
+.P01v2 p.buttons{text-align:center;margin-left:auto;margin-right:auto}
+.P02v1{width:300px;max-width:300px;height:auto!important}
+.P02v1 .dijitDialogPaneContent{padding:10px!important;overflow-y:auto}
+.P02v1 h3{margin-top:2px;text-align:center;font-size:1.2em}
+.P02v1 p{font-size:1em;line-height:1.5em;margin:12px 0 8px}
+.P02v1 ul{margin:0;padding:0 0 5px 40px;line-height:1.5em}
+.P02v1.dijitDialog .dijitDialogTitleBar{background-image:url('/aoenv/images/corporateGraphics/help/helpLink.png');background-repeat:no-repeat;padding-left:20px!important;background-position:5px 5px}
+.P02v1 .helpConfirmation{display:block;width:100px;margin:20px auto 5px}
+.P04v1 ul{list-style-type:none;margin:0;padding:10px 0 0 0}
+.P04v1 ul li{margin:0 0 10px 20%;padding:0}
+.P04v1 p.buttons{text-align:center;margin-left:auto;margin-right:auto;padding-top:5px}
+.P04v1 p{padding:10px;margin:0}
+.FAQ_Lightbox{width:500px;max-width:500px}
+.FAQ_Lightbox .dijitDialogPaneContent{padding:0!important}
+.FAQ_Lightbox .lightboxHelpContents{max-height:450px;overflow:auto}
+.FAQ_Lightbox h3{margin-top:15px}
+.FAQ_Lightbox p+h3{margin-top:25px}
+.FAQ_Lightbox p{margin:8px 10px 0 10px}
+.FAQ_Lightbox .lightboxButtonContainer{text-align:right;margin:10px}
+.FAQ_Lightbox .faqConfirmation{padding:1px 10px;cursor:pointer}
+.P02v3,.tabPanel .P02v3{background-color:white;width:250px;min-height:35px;padding:15px;margin:0 0 0 11px;position:absolute;z-index:1000;border:solid #666;border-width:1px 2px 2px 1px;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-webkit-box-shadow:2px 2px 4px #666;-moz-box-shadow:2px 2px 4px #666;box-shadow:2px 2px 4px #666}
+.P02v3 .pointer{position:absolute;width:0;height:0;left:-25px;top:50%;margin-top:-12px;border:12px solid;border-color:transparent #666 transparent transparent}
+.P02v3 .insidePointer{position:absolute;width:0;height:0;left:-22px;top:50%;margin-top:-11px;border:11px solid;z-index:1;border-color:transparent white transparent transparent}
+.dojoMove .P02v3{display:none}
+[class*="C10"]{overflow:hidden;margin:8px auto;line-height:18px}
+[class*="C10"]>div{border-radius:10px;padding:10px;border:solid 1px #5b779f;margin:2px;min-height:36px}
+[class*="C10"] .primaryIdentifier,[class*="C10"] .secondaryIdentifier{padding-left:15px}
+[class*="C10"] .primaryIdentifier{font-weight:bold}
+[class*="C10"] .singleIdentifier{line-height:36px}
+.C10v2>div,[class*="C10v3"]>div,.C10v5>div{cursor:pointer}
+.C10v2>div:hover,.C10v2.selected>div,[class*="C10v3"]>div:hover,[class*="C10v3"].selected>div,.C10v5>div:hover,.C10v5.selected>div{border:solid 3px #0faeeb;margin:0;*margin:2px;*padding:8px}
+.C10v2 .content,[class*="C10v3"] .content,.C10v5 .content{display:none;position:relative}
+.C10v2.selected .content,[class*="C10v3"].selected .content,.C10v5.selected .content{display:block}
+[class*="C10v3"].selected>div{cursor:default}
+div.C10v3>input[type="radio"]{margin:24px 10px 5px 5px;float:left}
+div.C10v3>div{float:left;width:90%}
+.C10v4>div{border-style:dotted}
+.C10v4>div:hover,.C10v4.selected>div{border-style:solid}
+.C10v4 .primaryIdentifier{line-height:36px}
+.C10v4.C10v5 .arrow{margin-top:10px}
+.C10v5.selected>div{cursor:default}
+.C10v5 .arrow{background:url('/aoenv/images/corporateGraphics/arrows/CardArrowsSprite.png') no-repeat 0 0;float:left;height:15px;padding-left:9px;margin:1px 0 0 -3px}
+.C10v5>div:hover .arrow{background-position:0 -15px}
+.C10v5.selected>div .arrow{margin-top:3px;background-position:0 -30px;cursor:pointer}
+.F02v1x4{width:80px;height:28px;text-align:left;padding-top:3px}
+.F02v1x4 img{margin:0 8px 0 0;float:left}
+input.F02v1x4{background-position:5px 50%;padding-left:28px;background-repeat:no-repeat}
+input.F02v1x4.undo{background-image:url("/aoenv/images/corporateGraphics/controls/undo16.png")}
+input.F02v1x4.undo[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/undo-disabled16.png")}
+input.F02v1x4.delete{background-image:url("/aoenv/images/corporateGraphics/controls/trashcan16.png")}
+input.F02v1x4.delete[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/trashcan-disabled16.png")}
+input.F02v1x4.edit{background-image:url("/aoenv/images/corporateGraphics/controls/pencil16.png")}
+input.F02v1x4.edit[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/pencil-disabled16.png")}
+input.F02v1x4.save{background-image:url("/aoenv/images/corporateGraphics/controls/floppydisc16.png")}
+input.F02v1x4.save[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/floppydisc-disabled16.png")}
+button.F02v1x4:before{margin:0 8px 0 0;float:left}
+button.F02v1x4.save:before{content:url("/aoenv/images/corporateGraphics/controls/floppydisc16.png")}
+button.F02v1x4.save[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/floppydisc-disabled16.png")}
+button.F02v1x4.edit:before{content:url("/aoenv/images/corporateGraphics/controls/pencil16.png")}
+button.F02v1x4.edit[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/pencil-disabled16.png")}
+button.F02v1x4.undo:before{content:url("/aoenv/images/corporateGraphics/controls/undo16.png")}
+button.F02v1x4.undo[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/undo-disabled16.png")}
+button.F02v1x4.delete:before{content:url("/aoenv/images/corporateGraphics/controls/trashcan16.png")}
+button.F02v1x4.delete[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/trashcan-disabled16.png")}
+.F02v1x5{width:64px;height:64px}
+input.F02v1x5{background-position:50% 10px;background-repeat:no-repeat;padding-top:24px}
+input.F02v1x5.undo{background-image:url("/aoenv/images/corporateGraphics/controls/undo24.png")}
+input.F02v1x5.undo[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/undo-disabled24.png")}
+input.F02v1x5.delete{background-image:url("/aoenv/images/corporateGraphics/controls/trashcan24.png")}
+input.F02v1x5.delete[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/trashcan-disabled24.png")}
+input.F02v1x5.edit{background-image:url("/aoenv/images/corporateGraphics/controls/pencil24.png")}
+input.F02v1x5.edit[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/pencil-disabled24.png")}
+input.F02v1x5.save{background-image:url("/aoenv/images/corporateGraphics/controls/floppydisc24.png")}
+input.F02v1x5.save[disabled]{background-image:url("/aoenv/images/corporateGraphics/controls/floppydisc-disabled24.png")}
+button.F02v1x5:before{margin:0 2px}
+button.F02v1x5.save:before{content:url("/aoenv/images/corporateGraphics/controls/floppydisc24.png")}
+button.F02v1x5.save[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/floppydisc-disabled24.png")}
+button.F02v1x5.edit:before{content:url("/aoenv/images/corporateGraphics/controls/pencil24.png")}
+button.F02v1x5.edit[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/pencil-disabled24.png")}
+button.F02v1x5.undo:before{content:url("/aoenv/images/corporateGraphics/controls/undo24.png")}
+button.F02v1x5.undo[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/undo-disabled24.png")}
+button.F02v1x5.delete:before{content:url("/aoenv/images/corporateGraphics/controls/trashcan24.png")}
+button.F02v1x5.delete[disabled]:before{content:url("/aoenv/images/corporateGraphics/controls/trashcan-disabled24.png")}
+.F02v3,.F02v4{color:white;font-weight:bold;overflow:visible;padding:5px 20px;border:2px solid #343028;-webkit-border-radius:5px;border-radius:5px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box}
+.F02v3{background-color:#58b100;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#58b100,endColorstr=#008000);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#58b100, endColorstr=#008000)";background-image:-webkit-gradient(linear,left top,left bottom,from(#58b100),to(#008000));background-image:-webkit-linear-gradient(top,#58b100,#008000);background-image:-moz-linear-gradient(top,#58b100,#008000);background-image:-o-linear-gradient(top,#58b100,#008000);background-image:linear-gradient(to bottom,#58b100,#008000)}
+.F02v4{background-color:#5b779f;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#5b779f,endColorstr=#545A78);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#5b779f, endColorstr=#545A78 )";background-image:-webkit-gradient(linear,left top,left bottom,from(#5b779f),to(#545a78));background-image:-webkit-linear-gradient(top,#5b779f,#545a78);background-image:-moz-linear-gradient(top,#5b779f,#545a78);background-image:-o-linear-gradient(top,#5b779f,#545a78);background-image:linear-gradient(to bottom,#5b779f,#545a78)}
+.F02v3:hover{-webkit-box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #d5ebbf;box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #d5ebbf;background-color:#75ea00;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#75EA00,endColorstr=#58b100);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#75EA00, endColorstr=#58b100)";background-image:-webkit-gradient(linear,left top,left bottom,from(#75ea00),to(#58b100));background-image:-webkit-linear-gradient(top,#75ea00,#58b100);background-image:-moz-linear-gradient(top,#75ea00,#58b100);background-image:-o-linear-gradient(top,#75ea00,#58b100);background-image:linear-gradient(to bottom,#75ea00,#58b100)}
+.F02v4:hover{-webkit-box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #9cf;box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #9cf;background-color:#7697c7;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7697c7,endColorstr=#5b779f);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#7697c7, endColorstr=#5b779f)";background-image:-webkit-gradient(linear,left top,left bottom,from(#7697c7),to(#5b779f));background-image:-webkit-linear-gradient(top,#7697c7,#5b779f);background-image:-moz-linear-gradient(top,#7697c7,#5b779f);background-image:-o-linear-gradient(top,#7697c7,#5b779f);background-image:linear-gradient(to bottom,#7697c7,#5b779f)}
+.F02v3:active{-webkit-box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #d5ebbf;box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #d5ebbf;background-color:#008000;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#008000,endColorstr=#58b100);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#008000, endColorstr=#58b100)";background-image:-webkit-gradient(linear,left top,left bottom,from(#008000),to(#58b100));background-image:-webkit-linear-gradient(top,#008000,#58b100);background-image:-moz-linear-gradient(top,#008000,#58b100);background-image:-o-linear-gradient(top,#008000,#58b100);background-image:linear-gradient(to bottom,#008000,#58b100)}
+.F02v4:active{-webkit-box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #9cf;box-shadow:inset 0 -1px 1px #343028,inset 0 1px 1px #9cf;background-color:#455a78;filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#455A78,endColorstr=#5b779f);-ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#455A78, endColorstr=#5b779f)";background-image:-webkit-gradient(linear,left top,left bottom,from(#455a78),to(#5b779f));background-image:-webkit-linear-gradient(top,#455a78,#5b779f);background-image:-moz-linear-gradient(top,#455a78,#5b779f);background-image:-o-linear-gradient(top,#455a78,#5b779f);background-image:linear-gradient(to bottom,#455a78,#5b779f)}
+.F02v3[disabled],.F02v3[disabled]:hover,.F02v3[disabled]:active,.F02v4[disabled],.F02v4[disabled]:hover,.F02v4[disabled]:active{background-color:#bbb;color:#eee;border-color:#7a7e81;filter:none;-ms-filter:none;background-image:none;-webkit-box-shadow:0 0 0,0 0 0;box-shadow:0 0 0,0 0 0}
+a.F02v3,a.F02v4{white-space:nowrap;color:white;display:inline-block;text-align:center}
+a.F02v3:hover,a.F02v4:hover{text-decoration:none}
+fieldset div.field,fieldset .field div{float:none;clear:none;width:auto}
+fieldset .field label{width:auto;float:none;margin:0;text-align:left}
+.field.erred,.field .erred{background-color:white}
+fieldset .field div.clear{clear:both}
+fieldset .field select,fieldset .field input,fieldset .field textarea{vertical-align:middle;margin:2px}
+.field input,.field select{vertical-align:middle}
+.field>.labelContainer{width:30%;text-align:right;float:left}
+.labelContainer>label{padding:4px 0}
+.field.vertical>.labelContainer{display:block;margin-left:30%;width:auto;text-align:left;float:none}
+.field>.inputContainer{display:block;margin-left:30%}
+.inputContainer.vertical,.inputContainer{margin-left:30%}
+.inputContainer>.column{width:100px;float:left}
+.labelContainer img{vertical-align:middle}
+.field.erred label{color:crimson}
+.field.erred input[type=text],.field.erred textarea,.field.erred select{border:2px solid crimson}
+.field.erred input[type=radio],.field.erred input[type=checkbox]{outline:2px solid crimson}
+.field.erred .labelContainer>label{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/errorSmall.png");padding-left:20px;background-repeat:no-repeat;background-position:left 4px}
+.field.vertical.erred .labelContainer>label{margin-left:-20px}
+.field.warned .labelContainer>label{background-image:url("/aoenv/images/corporateGraphics/feedbackMessage/warningSmall.png");padding-left:20px;background-repeat:no-repeat;background-position:left 4px}
+.field .requiredIndicator{color:red}
+.field{margin:10px 0;line-height:1.9em}
+@media print{body{font-size:65%}
+#header #headerTopLinks,#header #headerBottomLinks{display:none}
+#ribbon{border-top:0}
+ul.errorMessages{border-width:4px;padding:2px 0}
+ul.errorMessages li{margin-left:20px}
+fieldset div{margin:1px 0}
+.tabPanel fieldset{border-top:0}
+.tabPanel fieldset legend{border-bottom:2px solid #5b779f}
+.tabPanel hr{height:2px}
+.tabPanel input.button{color:black;background-color:#d4d0c8}
+.tabPanel .content{border:0}
+.mainTab{border-bottom:0;font-weight:normal}
+.mainTab .selected span,.mainTab .selected a{font-weight:bold}
+.subTab{font-weight:normal}
+.subTab .selected span span,.subTab .selected a span{font-weight:bold}
+}
